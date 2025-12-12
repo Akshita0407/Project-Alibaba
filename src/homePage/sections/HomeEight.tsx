@@ -1,4 +1,4 @@
-import HomeBoxes from "../components/HomeBoxes";
+import HomeBoxes from "../../components/HomeBoxes";
 
 const contentTwo = [
   {
