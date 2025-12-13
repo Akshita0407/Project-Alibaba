@@ -5,7 +5,7 @@ const HomeThree = () => {
     <>
       <div className="w-full flex flex-col gap-8 p-6 md:p-15">
         <div>
-          <h1 className="lg:text-[58px] text-[32px] font-bold">
+          <h1 className="text-[26px] leading-none lg:text-6xl font-bold">
             Sell to a global audience
           </h1>
         </div>

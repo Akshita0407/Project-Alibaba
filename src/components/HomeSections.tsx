@@ -24,7 +24,7 @@ const HomeSections = ({
         <div className="lg:w-[48%] w-full flex flex-col gap-3 justify-center font-semibold ">
           <div className="flex flex-col mb-2">
             <p className="lg:text-[16px] text-[14px]">{title}</p>
-            <h3 className="lg:text-[40px] text-[28px] font-bold">{subtitle}</h3>
+            <h3 className="lg:text-[32px] leading-none my-2 text-[28px] font-bold">{subtitle}</h3>
           </div>
           <div className="flex mb-3 ">
             <p className="text-[#666666] md:text-[16px] text-[14px] ">

@@ -16,7 +16,7 @@ interface InsightBoxesProps {
 const HomeBoxes = ({ title, items }: InsightBoxesProps) => {
   return (
     <div className="flex flex-col w-full p-6 md:p-15">
-      <h1 className="text-[32px] lg:text-[58px] leading-none font-semibold">
+      <h1 className="text-[26px] leading-none lg:text-6xl font-bold">
         {title}
       </h1>
 
@@ -24,7 +24,7 @@ const HomeBoxes = ({ title, items }: InsightBoxesProps) => {
         {items.map((c) => (
           <div
             key={c.id}
-            className="min-h-[300px] w-[260px] md:w-[360px] flex flex-col gap-3"
+            className="min-h-[300px]  md:w-[360px] flex flex-col gap-3"
           >
             <img
               src={c.imgSrc}
@@ -32,8 +32,12 @@ const HomeBoxes = ({ title, items }: InsightBoxesProps) => {
               className="object-center object-contain"
             />
 
-            <h2 className="text-[28px] font-semibold">{c.title}</h2>
-            <p className="text-[16px] text-[#666666]">{c.description}</p>
+            <h3 className="lg:text-[28px] text-[20px] font-semibold">
+              {c.title}
+            </h3>
+            <p className="lg:text-[16px] text-[14px] text-[#666666]">
+              {c.description}
+            </p>
 
             <Button
               buttonText={c.buttonText}

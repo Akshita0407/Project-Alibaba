@@ -13,19 +13,20 @@ const HomeTwo = () => {
           {content.map((c) => (
             <div
               key={c.id}
-              className="flex flex-col items-center justify-center text-center p-4"
+              className="flex flex-col items-center justify-center text-center p-4 relative"
             >
-              <div className="lg:text-[55px] font-bold  mb-2">{c.number}</div>
-              <p className="lg:text-[34px] ">{c.text}</p>
+              <div className="lg:text-5xl text-2xl font-bold  mb-2">
+                {c.number}
+              </div>
+              <p className="lg:text-2xl text-xs  ">{c.text}</p>
+              {(c.id === 1 || c.id === 3) && (
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 h-[60%] w-1 bg-white" />
+              )}
             </div>
           ))}
         </div>
         <div className="w-full lg:w-[50%] flex items-center justify-center">
-          <img
-            src="your-image-url"
-            alt="Description"
-            className="w-full h-full object-cover rounded-lg"
-          />
+          <img src="image" alt="" className="w-full h-full object-contain" />
         </div>
       </div>
     </div>

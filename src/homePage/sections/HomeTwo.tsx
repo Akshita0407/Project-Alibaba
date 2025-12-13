@@ -37,24 +37,24 @@ const HomeTwo = () => {
   return (
     <div className="w-full h-auto bg-black p-6 md:p-15 flex flex-col gap-5 text-white">
       <div>
-        <h3 className="text-[28px] md:text-[44px] font-bold pb-8">
+        <h2 className="text-[26px] leading-none lg:text-6xl font-bold pb-8">
           One platform, unlimited business potential
-        </h3>
+        </h2>
         <div className="flex flex-wrap md:gap-12 gap-6 w-full items-center">
           <div className="w-fit flex flex-col ">
-            <p className="text-[44px] md:text-[64px] font-bold text-[#b5d3ff]">
-              50M+{" "}
-            </p>
+            <h2 className="leading-none text-[24px] lg:text-[64px] font-bold text-[#b5d3ff]">
+              50M+
+            </h2>
             <p className="text-[14px] md:text-[16px]">active buyers</p>
           </div>
           <div className="w-fit flex flex-col ">
-            <p className="text-[44px]  md:text-[64px]  font-bold text-[#b5d3ff]">
+            <p className="leading-none text-[24px] lg:text-[64px] font-bold text-[#b5d3ff]">
               500K+
             </p>
             <p className="text-[14px] md:text-[16px]">daily inquiries</p>
           </div>
           <div className="w-fit flex flex-col">
-            <p className="text-[44px]  md:text-[64px]  font-bold text-[#b5d3ff]">
+            <p className="leading-none text-[24px] lg:text-[64px]  font-bold text-[#b5d3ff]">
               200+
             </p>
             <p className="text-[14px] md:text-[16px]">
@@ -68,15 +68,17 @@ const HomeTwo = () => {
         {content.map((c) => (
           <div
             key={c.id}
-            className="w-auto min-h-80 py-8  px-5 flex flex-col gap-3 bg-[#070E28FF] border-transparent border rounded-[10px] hover:border-[#3d53b3] cursor-pointer hover:bg-[#152466]"
+            className="w-auto lg:min-h-80 min-h-60 py-8 px-5 flex flex-col gap-5 bg-[#070E28FF] border-transparent border rounded-[10px] hover:border-[#3d53b3] cursor-pointer hover:bg-[#152466]"
           >
             <div className="w-18 h-18 rounded-full aspect-square border border-transparent  bg-[#1d2d72] flex justify-center items-center ">
               <div className="w-12 h-12 rounded-full aspect-square border border-transparent  bg-[#3d53b3] flex justify-center items-center ">
                 {c.icon}
               </div>
             </div>
-            <h2 className="text-[20px] font-semibold">{c.title}</h2>
-            <p className="text-[18px]">{c.description}</p>
+            <h3 className="text-[20px] lg:text-[32px] leading-none font-semibold">
+              {c.title}
+            </h3>
+            <p className=" lg:text-[16px] text-[14px]">{c.description}</p>
           </div>
         ))}
       </div>

@@ -3,14 +3,12 @@ import Button from "../../components/Button";
 const HomeTen = () => {
   return (
     <div className="w-full  px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16 lg:px-12 lg:py-20 flex flex-col gap-8 sm:gap-12 md:gap-16 items-center bg-black">
-      {/* Title */}
       <div className="w-full text-center max-w-5xl">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+        <h1 className="text-[26px] leading-none lg:text-6xl font-bold text-white ">
           Start your borderless business in 3 easy steps:
-        </h2>
+        </h1>
       </div>
 
-      {/* Steps Container */}
       <div className="flex flex-col items-center w-full max-w-6xl relative">
         <div className=" hidden md:block absolute top-6 left-1/2 transform -translate-x-1/2 h-1 w-[70%] lg:w-[68%] bg-[#A1C0FC] z-0"></div>
 

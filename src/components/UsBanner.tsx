@@ -59,22 +59,22 @@ const UsBanner = () => {
       }}
     >
       {/*------------------------ */}
-      <div className="w-full flex lg:flex-row gap-3 mb-5">
+      <div className="w-full flex lg:flex-row flex-col-reverse gap-3 mb-5">
         {/*----*/}
         <div className="lg:w-[50%] w-full flex flex-col lg:min-h-[600px] min-h-[400px] gap-4">
-          <p className="text-[21px]">SELL ON ALIBABA.COM</p>
-          <h2 className="text-[50px] text-[#022aa7] font-bold">
+          <p className="text-[14px] lg:text-[16px] ">SELL ON ALIBABA.COM</p>
+          <h2 className="text-3xl lg:text-5xl leading-none text-[#022aa7] font-bold">
             Unleash Infinite Business Opportunities
           </h2>
-          <p className="text-[28px] text-[#0077fc]">
+          <p className="lg:text-2xl text-xl text-[#0077fc]">
             Find new customers across the globe
           </p>
           <p className="text-[14px] mt-2">Starting from</p>
           <div className="flex items-center gap-8">
             <div className="flex items-baseline">
-              <span className="text-[#ff6600] text-[70px] leading-none">
-                <sup className="text-[40px]">$</sup>166
-                <span className="text-[24px] text-black ml-1 align-baseline">
+              <span className="text-[#ff6600] lg:text-6xl text-4xl leading-none">
+                <sup className="lg:text-4xl text-2xl">$</sup>166
+                <span className="lg:text-4xl text-2xl text-black ml-1 align-baseline">
                   /mo
                 </span>
               </span>
@@ -98,14 +98,14 @@ const UsBanner = () => {
         </div>
         {/*----*/}
         <div className="lg:w-[50%] w-full flex relative lg:min-h-[600px] min-h-[400px] ">
-          <div className="absolute z-15 inset-0 w-[250px] h-[450px] transform translate-y-20">
+          <div className="absolute z-15 inset-0 w-[250px] lg:h-[450px] h-[300px] transform translate-y-20 lg:translate-x-0 -translate-x-5 ">
             <img
               src={image1}
               alt=""
               className="w-full h-full object-contain object-center"
             />
           </div>
-          <div className="absolute z-5 inset-0 w-full h-[500px]">
+          <div className="absolute z-5 inset-0 w-full lg:h-[500px]">
             <img
               src={image2}
               alt=""
@@ -115,11 +115,11 @@ const UsBanner = () => {
         </div>
       </div>
       {/*------------------------- */}
-      <div className="w-full flex lg:flex-row flex-col justify-between">
+      <div className="w-full flex lg:flex-row flex-col justify-between items-center gap-4">
         {boxes.map((c) => (
           <div
             key={c.id}
-            className="bg-white w-[300px] min-h-[350px] flex flex-col p-5 rounded-[10px] gap-5 border border-transparent"
+            className="bg-white lg:w-[300px] w-full lg:min-h-[350px] min-h-[300px] flex flex-col p-5 rounded-[10px] gap-5 border border-transparent"
           >
             <div className="w-full h-[100px] border border-transparent rounded-[10px]">
               <img
@@ -128,8 +128,8 @@ const UsBanner = () => {
                 className="w-full h-full object-contain object-center border border-transparent rounded-[10px]"
               />
             </div>
-            <p className="text-[24px] font-bold">{c.title}</p>
-            <p className="text-[16px] text-[#666666]">{c.description}</p>
+            <p className="md:text-2xl text-[20px] font-semibold">{c.title}</p>
+            <p className=" text-[14px] text-[#666666]">{c.description}</p>
           </div>
         ))}
       </div>

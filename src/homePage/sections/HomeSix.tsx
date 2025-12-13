@@ -53,7 +53,7 @@ const HomeSix = () => {
   return (
     <>
       <div className="w-full md:pt-15 py-6 bg-black flex flex-col justify-center ">
-        <h1 className=" px-6 md:px-15 text-[32px] md:text-[58px] text-white lg:text-center font-bold">
+        <h1 className="leading-none my-4 lg:my-1 px-6 md:px-15 text-[26px]  lg:text-6xl font-bold text-white lg:text-center ">
           Access all-in-one AI tools
         </h1>
         <div className="w-full h-auto ">
@@ -126,8 +126,10 @@ const HomeSix = () => {
                       ></video>
                     </div>
                     <div className="flex flex-col gap-3 text-white">
-                      <h2 className="text-[32px] font-bold">{slide.title}</h2>
-                      <p className="text-[16px] text-[#ffffffcc]">
+                      <h2 className="text-[28px] lg:text-[32px] font-bold">
+                        {slide.title}
+                      </h2>
+                      <p className="lg:text-[16px] text-[14px] text-[#ffffffcc]">
                         {slide.description}
                       </p>
                       <a href={slide.linkto} className="underline">

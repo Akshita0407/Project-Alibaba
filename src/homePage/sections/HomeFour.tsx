@@ -15,12 +15,11 @@ const HomeFour = () => {
             ></video>
           </div>
         </div>
-
         {/*---*/}
         <div className="lg:w-[48%] w-full flex flex-col gap-5 justify-center ">
           <div className="flex flex-col mb-2">
             <p className="lg:text-[16px] text-[14px]">MARKETING TOOLS</p>
-            <h3 className="lg:text-[40px] text-[28px] font-bold ">
+            <h3 className="lg:text-[32px] text-[28px] font-bold my-2 leading-none">
               Launch targeted ad campaigns
             </h3>
           </div>

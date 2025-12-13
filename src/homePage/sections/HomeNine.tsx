@@ -114,9 +114,9 @@ const HomeNine = () => {
 
   return (
     <div className="w-full flex flex-col p-6 md:p-15 gap-8">
-      <h1 className="font-bold text-[32px] md:text-[58px] lg:text-[58px]">
+      <h2 className="text-[26px] leading-none lg:text-6xl font-bold ">
         Real businesses, real results
-      </h1>
+      </h2>
 
       <Swiper
         className="w-full h-auto"
@@ -148,7 +148,7 @@ const HomeNine = () => {
         ))}
       </Swiper>
 
-      <div className="mt-15">
+      <div className="mt-8">
         <Swiper
           className="w-full h-auto"
           spaceBetween={10}
@@ -172,15 +172,15 @@ const HomeNine = () => {
 
               <div className="flex lg:flex-row flex-col-reverse w-full items-center">
                 <div className="lg:w-[60%] w-full flex flex-col gap-4 text-white lg:pl-15 px-8 py-10">
-                  <h2 className="md:text-[44px] text-[20px] font-semibold">
+                  <h2 className="md:text-[40px] text-[20px] font-semibold">
                     {slide.title}
                   </h2>
 
                   <p className="md:text-[16px] text-[14px]">{slide.subtitle}</p>
 
-                  <p className="md:text-[44px] text-[20px] font-semibold leading-none">
+                  <h3 className="md:text-[40px] text-[20px] font-semibold leading-none">
                     {slide.description}
-                  </p>
+                  </h3>
 
                   <div className="flex flex-col">
                     <img src={slide.country} className="w-10 h-10" alt="flag" />

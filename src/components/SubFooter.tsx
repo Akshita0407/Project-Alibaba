@@ -10,8 +10,8 @@ const images = [
 const Subfooter = () => {
   return (
     <>
-      <div className="w-full p-6 md:p-15 flex lg:flex-row flex-col justify-between items-center">
-        <div className="flex justify-center items-center gap-5">
+      <div className="w-full p-6 md:p-15 flex lg:flex-row flex-col gap-2 justify-between items-center">
+        <div className="flex justify-center items-center gap-5 text-[14px] md:text-[16px]">
           <Link to="">Terms of Service</Link>
           <Link to="">Privacy Policy</Link>
         </div>

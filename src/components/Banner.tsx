@@ -58,17 +58,17 @@ const Banner = () => {
               <div className="absolute inset-0 bg-black/50 z-10"></div>
 
               <div
-                className="w-[320px] h-full  absolute top-0 left-0 md:w-full  z-40
+                className=" h-full  absolute top-0 left-0 md:w-full  z-40
                 lg:p-20 p-6 flex flex-col justify-center items-center 
-                text-center text-white leading-none gap-5 my-5 text-wrap"
+                text-center text-white  gap-5 my-5 text-wrap"
               >
-                <h1 className="text-[18px] md:text-[32px] font-bold">
+                <h3 className="text-[16px] md:text-[32px] font-bold">
                   {c.title}
-                </h1>
+                </h3>
 
-                <p className="text-[20px] md:text-[40px] lg:text-[72px] font-bold py-4">
+                <h1 className=" text-[26px] leading-none lg:text-6xl font-bold py-4">
                   {c.description}
-                </p>
+                </h1>
 
                 {c.videoSrc && (
                   <>
@@ -78,7 +78,9 @@ const Banner = () => {
                     >
                       <IoPlayCircleOutline className="w-[30px] h-[30px]" />
 
-                      <span className="ml-2">Watch 2 min Video</span>
+                      <span className="ml-2 text-[16px] md:text-[32px]">
+                        Watch 2 min Video
+                      </span>
                     </button>
                     {showVideo && (
                       <div className="fixed inset-0 z-50 flex justify-center items-center bg-black/70">

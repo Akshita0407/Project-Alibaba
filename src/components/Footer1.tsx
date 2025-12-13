@@ -54,15 +54,18 @@ const Footer1 = () => {
   return (
     <>
       <div className="w-full p-6 md:p-15">
-        <div className=" w-full flex lg:flex-row flex-col justify-between  gap-5  ">
+        <div className=" w-full flex lg:flex-row flex-col justify-between gap-5  ">
           {content.map((c) => (
-            <div
-              key={c.id}
-              className="w-[300px] text-[16px] flex flex-col gap-5"
-            >
-              <h2 className="font-bold ">{c.title}</h2>
+            <div key={c.id} className="w-[300px]  flex flex-col lg:gap-5 gap-3">
+              <h3 className="font-bold text-[16px] md:text-[18px] ">
+                {c.title}
+              </h3>
               {c.links?.map((l) => (
-                <Link key={l.label} to={l.to}>
+                <Link
+                  key={l.label}
+                  to={l.to}
+                  className="text-[12px] md:text-[14px]"
+                >
                   {l.label}
                 </Link>
               ))}
