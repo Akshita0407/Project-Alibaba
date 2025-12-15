@@ -5,6 +5,8 @@ import HomeFour from "./sections/HomeFour";
 import HomeFive from "./sections/HomeFive";
 import HomeSix from "./sections/HomeSix";
 import HomeSeven from "./sections/HomeSeven";
+import HomeEight from "./sections/HomeEight";
+import HomeNine from "./sections/HomeNine";
 import HomeTen from "./sections/HomeTen";
 const UsHome = () => {
   return (
@@ -16,6 +18,8 @@ const UsHome = () => {
       <HomeFive />
       <HomeSix />
       <HomeSeven />
+      <HomeEight />
+      <HomeNine />
       <HomeTen />
     </>
   );

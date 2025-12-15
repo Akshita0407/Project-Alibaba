@@ -95,15 +95,15 @@ const HomeSeven = () => {
 
               <div className="p-6">
                 <div className="h-60">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                     {plan.planType}
                   </h2>
 
                   <div className="flex items-baseline mb-3">
-                    <span className="text-[#ff6600] lg:text-5xl text-2xl leading-none">
-                      <sup className="lg:text-3xl text-xl">$</sup>
+                    <span className="text-[#ff6600] lg:text-4xl text-2xl leading-none">
+                      <sup className="lg:text-2xl text-xl">$</sup>
                       {plan.price}
-                      <span className="lg:text-3xl text-xl text-black ml-1 align-baseline">
+                      <span className="lg:text-2xl text-xl text-black ml-1 align-baseline">
                         /mo
                       </span>
                     </span>

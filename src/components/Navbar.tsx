@@ -5,31 +5,14 @@ import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const title = [
-    {
-      id: 1,
-      label: "Platform",
-    },
-    {
-      id: 2,
-      label: "Solutions",
-    },
-    {
-      id: 3,
-      label: "Features",
-    },
-    {
-      id: 4,
-      label: "Pricing",
-    },
-    {
-      id: 5,
-      label: "Resources",
-    },
-    {
-      id: 6,
-      label: "Business blogs",
-    },
+    { id: 1, label: "Platform", to: "/platform" },
+    { id: 2, label: "Solutions", to: "/solutions" },
+    { id: 3, label: "Features", to: "/feature" },
+    { id: 4, label: "Pricing", to: "/pricing" },
+    { id: 5, label: "Resources", to: "/resources" },
+    { id: 6, label: "Business blogs", to: "/blogs" },
   ];
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -39,19 +22,17 @@ const Navbar = () => {
           <h2 className="text-2xl font-bold text-orange-500 cursor-pointer">
             <NavLink to="/">Alibaba.com</NavLink>
           </h2>
-          <div className="w-full justify-between max-w-2xl hidden md:hidden lg:flex">
+
+          <div className="w-full justify-between max-w-2xl hidden lg:flex">
             {title.map((item) => (
-              <span
-                key={item.id}
-                className="text-sm font-medium text-blue-600 mx-3 cursor-pointer hover:text-blue-900 transition-colors hover:underline underline-offset-4"
-              >
-                {item.label}
-              </span>
+              <NavLink key={item.id} to={item.to}>
+                <span className="text-sm font-medium text-blue-600 mx-3 cursor-pointer hover:text-blue-900 transition-colors hover:underline underline-offset-4">
+                  {item.label}
+                </span>
+              </NavLink>
             ))}
           </div>
-          <div className="w-fit flex justify-center items-center">
-            <div className="flex flex-col text-xs hover:cursor-pointer items-center"></div>
-          </div>
+
           <div className="hidden lg:block">
             <NavLink
               to="/us"
@@ -60,12 +41,14 @@ const Navbar = () => {
               Us Page
             </NavLink>
           </div>
+
           <FaBars
             onClick={() => setOpen(true)}
             className="lg:hidden cursor-pointer text-blue-600"
             size={24}
           />
-          <div className="w-fit gap-2 hidden md:hidden lg:flex">
+
+          <div className="w-fit gap-2 hidden lg:flex">
             <div className="text-xs font-semibold border rounded-full px-5 py-2 hover:cursor-pointer border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors">
               Contact Us
             </div>
@@ -89,13 +72,13 @@ const Navbar = () => {
       >
         <div className="w-full h-screen flex flex-col gap-1 pt-20 px-6">
           {title.map((item) => (
-            <span
-              key={item.id}
-              className="w-full text-sm font-medium cursor-pointer hover:bg-gray-50 text-blue-600 py-3 px-4 rounded-lg transition-colors hover:underline underline-offset-4"
-            >
-              {item.label}
-            </span>
+            <NavLink key={item.id} to={item.to}>
+              <span className="w-full text-sm font-medium cursor-pointer hover:bg-gray-50 text-blue-600 py-3 px-4 rounded-lg transition-colors hover:underline underline-offset-4">
+                {item.label}
+              </span>
+            </NavLink>
           ))}
+
           <div className="w-full justify-center items-center gap-3 flex flex-col mt-6">
             <NavLink
               to="/us"
