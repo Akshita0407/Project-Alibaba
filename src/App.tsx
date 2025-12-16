@@ -3,6 +3,7 @@ import MainLayout from "./layout/MainLayout";
 import Home from "./homePage/Index";
 import UsHome from "./usHomePage/Index";
 import Feature from "./productFeaturePage/Index";
+import Solution from "./solutionPage/Index";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper.css";
 import "./App.css";
@@ -16,6 +17,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="us" element={<UsHome />} />
             <Route path="feature" element={<Feature />} />
+            <Route path="solutions" element={<Solution />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,5 +1,5 @@
 import FeatureSection from "../../components/FeatureSection";
-import image from "../../assets/Feature(2).png";
+import image from "../../assets/storeFront.png";
 const FeatureOne = () => {
   const faqs = [
     {

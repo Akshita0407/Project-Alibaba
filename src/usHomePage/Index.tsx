@@ -1,4 +1,4 @@
-import UsBanner from "../components/UsBanner";
+import UsBanner from "./sections/UsBanner";
 import HomeTwo from "./sections/HomeTwo";
 import HomeThree from "./sections/HomeThree";
 import HomeFour from "./sections/HomeFour";

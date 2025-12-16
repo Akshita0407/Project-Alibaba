@@ -59,7 +59,7 @@ const FeatureSectionTwo = ({
                 <div key={c.id} className="w-full flex gap-4 items-center">
                   <div className="w-[20%] flex justify-center items-center">
                     <div className="w-20 h-20 text-[#245ecf] flex justify-center items-center text-[40px]">
-                      {" "}
+             
                       {c.icon}
                     </div>
                   </div>

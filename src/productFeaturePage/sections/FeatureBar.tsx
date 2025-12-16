@@ -42,7 +42,7 @@ const FeatureBar = () => {
         className={`w-full bg-[#e6efff] h-[60px] flex items-center justify-center px-4 shadow-sm transition-all duration-300
           ${isSticky ? "fixed top-[60px] left-0 right-0 z-40" : "relative"}`}
       >
-        <div className="hidden md:flex gap-8 text-[14px] font-semibold text-[#333]">
+        <div className="hidden lg:flex gap-8 text-[14px] font-semibold text-[#333]">
           {content.map((c) => (
             <button
               key={c.id}
@@ -54,7 +54,7 @@ const FeatureBar = () => {
           ))}
         </div>
 
-        <div className="md:hidden w-full">
+        <div className="lg:hidden w-full">
           <select
             className="w-full h-10 px-3 rounded-md text-[14px] font-semibold"
             defaultValue=""

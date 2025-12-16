@@ -1,6 +1,6 @@
 import { MdOutlineCheck } from "react-icons/md";
-import image1 from "../assets/Banner(2.1).png";
-import image2 from "../assets/Banner(2.2).png";
+import image1 from "../../assets/usImage.png";
+import image2 from "../../assets/usBanner.png";
 const checkMark = [
   {
     id: 1,
@@ -45,7 +45,7 @@ const boxes = [
   },
 ];
 
-import Button from "./Button";
+import Button from "../../components/Button";
 const UsBanner = () => {
   return (
     <div

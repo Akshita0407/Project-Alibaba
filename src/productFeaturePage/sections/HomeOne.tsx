@@ -1,4 +1,4 @@
-import image from "../../assets/FeatureImage(1).png";
+import image from "../../assets/mainFeature.png";
 const HomeOne = () => {
   return (
     <>

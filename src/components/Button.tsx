@@ -1,6 +1,9 @@
+import type { ReactElement } from "react";
+
 interface ButtonContent {
   buttonText: string;
   style?: string;
+  to?: ReactElement;
 }
 
 const Button = ({ buttonText, style }: ButtonContent) => {

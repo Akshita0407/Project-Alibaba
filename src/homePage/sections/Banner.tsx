@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { ImCross } from "react-icons/im";
 import { IoPlayCircleOutline } from "react-icons/io5";
-import Button from "./Button";
+import Button from "../../components/Button";
 
 interface BannerContent {
   id: number;

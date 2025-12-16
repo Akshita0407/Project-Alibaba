@@ -1,5 +1,5 @@
 import FeatureSection from "../../components/FeatureSection";
-import image from "../../assets/Feature(3).png";
+import image from "../../assets/communication.png";
 
 const FeatureTwo = () => {
   const faqs = [
@@ -35,7 +35,7 @@ const FeatureTwo = () => {
           <div className="lg:w-[46%] w-full lg:h-[500px] h-[250px]">
             <img
               src={image}
-              alt="Storefront"
+              alt=""
               className="w-full h-full object-contain object-center "
             />
           </div>

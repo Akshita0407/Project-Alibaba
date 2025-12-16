@@ -10,11 +10,11 @@ const HomeTen = () => {
         <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-4 ">
           <Button
             buttonText="Contact us"
-            style="border border-white rounded-[30px] bg-[transparent] w-[200px]! hover:bg-[#f60]! m-0!"
+            style="border border-white rounded-[30px] bg-[transparent]  w-[180px]! text-[18px]! hover:bg-[#f60]! m-0!"
           />
           <Button
             buttonText="Start Selling"
-            style="border border-white rounded-[30px] bg-[#f60] w-[200px]! hover:bg-[transparent]!"
+            style="border border-white rounded-[30px] bg-[#f60] w-[180px]! text-[18px]! hover:bg-[transparent]! "
           />
         </div>
       </div>

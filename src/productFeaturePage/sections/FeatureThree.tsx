@@ -1,7 +1,9 @@
 import FeatureSectionTwo from "../../components/FeatureSectionTwo";
-import image from "../../assets/Feature(4).png";
+import image from "../../assets/ads.png";
 import { TbHomeEco } from "react-icons/tb";
 import { GiArcheryTarget } from "react-icons/gi";
+import { VscGitPullRequestGoToChanges } from "react-icons/vsc";
+import { LuChartColumnIncreasing } from "react-icons/lu";
 
 const FeatureThree = () => {
   return (
@@ -24,23 +26,23 @@ const FeatureThree = () => {
             description:
               "based on geography, click history, and more - and only pay per click.",
             link: "",
-            title: "Product showcases",
+            title: "Keyword Advertising",
           },
           {
-            id: 1,
-            icon: <TbHomeEco />,
+            id: 3,
+            icon: <VscGitPullRequestGoToChanges />,
             description:
-              "Display top products to get up to 43% more exposure, with smart recommendations for which to use.",
+              "Proactively find and connect with buyers requesting products similar to yours.",
             link: "",
-            title: "Product showcases",
+            title: "Request for Quotation (RFQ)",
           },
           {
-            id: 2,
-            icon: <GiArcheryTarget />,
+            id: 4,
+            icon: <LuChartColumnIncreasing />,
             description:
-              "based on geography, click history, and more - and only pay per click.",
+              "Participate in Alibaba.com-sponsored campaigns to enjoy increased traffic periods and interest.",
             link: "",
-            title: "Product showcases",
+            title: "Sitewide promotions",
           },
         ]}
         subtitle="Ads and lead generation"
