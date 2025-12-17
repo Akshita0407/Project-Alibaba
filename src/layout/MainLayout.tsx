@@ -5,9 +5,11 @@ const MainLayout = () => {
   return (
     <>
       <div className="w-full h-15 text-center p-2 ">
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
       </div>
-      <main>
+      <main className="h-auto w-full">
         <Outlet />
       </main>
       <footer>
