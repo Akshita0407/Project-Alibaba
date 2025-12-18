@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 
-const ResourceLayout = () => {
+const BusinessLayout = () => {
   return (
     <>
       <header></header>
-      <div className="w-full flex lg:flex-row flex-col gap-[4%] md:p-15 p-6">
+      <div className="w-full flex lg:flex-row flex-col gap-[4%] ">
         <main className="w-full h-auto">
           <Outlet />
         </main>
@@ -17,4 +17,4 @@ const ResourceLayout = () => {
   );
 };
 
-export default ResourceLayout;
+export default BusinessLayout;

@@ -1,5 +1,5 @@
 import BusinessCard from "../../components/BlogCard";
-import image from "../../assets/blogThree.png";
+import image from "../../assets/blogSix.png";
 const AsideThree = () => {
   return (
     <>
@@ -10,7 +10,7 @@ const AsideThree = () => {
         readTime="9 min read"
         source="Alibaba.com"
         title="Alibaba.com Releases  ‘Trade Assurance’ in South Korea ..."
-        description="A major step toward digital trade infrastructure growth."
+        
       />
     </>
   );
