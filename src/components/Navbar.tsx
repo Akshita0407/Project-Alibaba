@@ -11,6 +11,7 @@ const Navbar = () => {
     { id: 4, label: "Pricing", to: "/pricing" },
     { id: 5, label: "Resources", to: "/resources" },
     { id: 6, label: "Business blogs", to: "/blogs" },
+     { id: 6, label: "Read page", to: "/read" },
   ];
 
   const [open, setOpen] = useState(false);
