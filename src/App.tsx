@@ -13,6 +13,17 @@ import Categories from "./categoriesPage/Index";
 import ProductResource from "./categoriesPage/sections/ProductResource";
 import Apparel from "./categoriesPage/sections/Apparel";
 import PersonalCare from "./categoriesPage/sections/PersonalCare";
+import Electronics from "./categoriesPage/sections/Electronics";
+import HomeAndGarden from "./categoriesPage/sections/HomeAndGarden";
+import Chemical from "./categoriesPage/sections/Chemical";
+import Machinery from "./categoriesPage/sections/Machinery";
+import MotherKidToy from "./categoriesPage/sections/MotherKidToy";
+import PackagingPrinting from "./categoriesPage/sections/PackagingPrinting";
+import RawMaterial from "./categoriesPage/sections/RawMaterial";
+import Renewable from "./categoriesPage/sections/Renewable";
+import Sports from "./categoriesPage/sections/Sports";
+import VehiclePart from "./categoriesPage/sections/VehiclePart";
+import HomeImprovement from "./categoriesPage/sections/HomeImprovement";
 
 function App() {
   return (
@@ -37,8 +48,17 @@ function App() {
             <Route index element={<ProductResource />} />
             <Route path="apparel" element={<Apparel />} />
             <Route path="beauty" element={<PersonalCare />} />
-            <Route path="consumer" element={<ProductResource />} />
-            <Route path="homeGarden" element={<ProductResource />} />
+            <Route path="consumer" element={<Electronics />} />
+            <Route path="homeGarden" element={<HomeAndGarden />} />
+            <Route path="chemical" element={<Chemical />} />
+            <Route path="homeImprovement" element={<HomeImprovement />} />
+            <Route path="machinery" element={<Machinery />} />
+            <Route path="motherKidsToys" element={<MotherKidToy />} />
+            <Route path="packaging" element={<PackagingPrinting />} />
+            <Route path="rawMaterial" element={<RawMaterial />} />
+            <Route path="renewable" element={<Renewable />} />
+            <Route path="sports" element={<Sports />} />
+            <Route path="vehicle" element={<VehiclePart />} />
           </Route>
         </Route>
       </Routes>

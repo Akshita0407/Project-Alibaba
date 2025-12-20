@@ -30,7 +30,9 @@ const ReadCardTwo = ({
         />
       </div>
       <div className="flex flex-col gap-3 my-4">
-        <h3 className="mt-2 lg:text-2xl text-[16px] leading-snug">{title}</h3>
+        <Link to={link}>
+          <h3 className="mt-2 lg:text-2xl text-[16px] leading-snug">{title}</h3>
+        </Link>
         <p className="text-[#ff6600] text-[12px] lg:text-[14px]">
           By {by} / {minutes} of reading
         </p>

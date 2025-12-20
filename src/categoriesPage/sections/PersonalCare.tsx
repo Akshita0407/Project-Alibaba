@@ -1,96 +1,138 @@
 import ReadMain from "../../components/ReadMain";
 import ReadCardOne from "../../components/ReadCardOne";
 import ReadCardTwo from "../../components/ReadCardTwo";
+import ReadRightContent from "../../components/ReadRight";
+
+const personalCareArticles = [
+  {
+    id: 1,
+    link: "",
+    minutes: "6",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/best-mousse-for-curly-hair.jpg?x-oss-process=style%2Fmedium_large",
+    title: "Professional Guide: Best Mousses for Every Curl Pattern",
+    by: "Oriana",
+    description:
+      "Transform your curls from frizzy to fabulous with the perfect mousse for your texture. Expert-backed recommendations for all curl types, from loose waves to tight coils, plus application tips for salon-worthy results.",
+  },
+  {
+    id: 2,
+    link: "",
+    minutes: "7",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Light-Strawberry-Blonde.jpg?x-oss-process=style%2Fmedium_large",
+    title: "Light Strawberry Blonde: A Guide to the Rising Shade",
+    by: "Oriana",
+    description:
+      "Master the delicate art of light strawberry blonde formulation and market positioning.",
+  },
+  {
+    id: 3,
+    link: "",
+    minutes: "6",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Portrait-of-Pretty-Girl.jpg?x-oss-process=style%2Fmedium_large",
+    title:
+      "1940s Hairstyling: A Modern Guide to Vintage Glamour for Everyday Wear",
+    by: "Anoshia Riaz",
+    description:
+      "Learn how to create stunning 1940s-inspired hairstyles with modern tools and techniques.",
+  },
+  {
+    id: 4,
+    link: "",
+    minutes: "6",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Woman-in-a-Hair-Salon.jpg?x-oss-process=style%2Fmedium_large",
+    title: "Feathered Hair: A Chic Revival for Modern Styles",
+    by: "Krista Plociennik",
+    description:
+      "Discover how the iconic feathered haircut has evolved into a versatile modern style.",
+  },
+  {
+    id: 5,
+    link: "",
+    minutes: "15",
+    imgSrc:
+      "https://img.baba-blog.com/2025/09/Young-Woman-in-a-Denim-Jacket.jpg?x-oss-process=style%2Fmedium_large",
+    title:
+      "Review Analysis of Amazon’s Hottest Selling Plus Size Women’s Jackets",
+    by: "Lela",
+    description:
+      "An in-depth analysis of top-selling plus-size jackets based on customer reviews.",
+  },
+  {
+    id: 6,
+    link: "",
+    minutes: "6",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Burgundy-vs-Maroon-Hair.jpg?x-oss-process=style%2Fmedium_large",
+    title: "Choose Your Red: Burgundy vs Maroon Hair Guide",
+    by: "Willa",
+    description:
+      "Master the subtle differences between burgundy and maroon hair colors.",
+  },
+  {
+    id: 7,
+    link: "",
+    minutes: "14",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/High-Top-Dreads.jpg?x-oss-process=style%2Fmedium_large",
+    title: "High Top Dreads: Complete Style and Planning Guide",
+    by: "Anoshia Riaz",
+    description:
+      "Learn how to plan, create, and maintain high top dreads with this comprehensive guide.",
+  },
+  {
+    id: 8,
+    link: "",
+    minutes: "8",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Mushroom-Blonde-Hair.jpg?x-oss-process=style%2Fmedium_large",
+    title: "The Complete Guide to Mushroom Blonde Hair Color Trend",
+    by: "Krista Plociennik",
+    description:
+      "Explore the sophisticated world of mushroom blonde – a cool-toned, versatile hair color.",
+  },
+  {
+    id: 9,
+    link: "",
+    minutes: "6",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Magenta-Hair.jpg?x-oss-process=style%2Fmedium_large",
+    title: "Ultimate Style Guide: How to Rock Magenta Hair",
+    by: "Krista Plociennik",
+    description:
+      "Discover stunning magenta hair transformations, from subtle highlights to bold statement looks.",
+  },
+  {
+    id: 10,
+    link: "",
+    minutes: "7",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Golden-Brown-Hair.jpg?x-oss-process=style%2Fmedium_large",
+    title: "The Golden Brown Hair Revolution: Your Complete Style Guide",
+    by: "Krista Plociennik",
+    description:
+      "Navigate the golden brown hair trend with expert insights and maintenance tips.",
+  },
+];
 
 const PersonalCare = () => {
   return (
-    <>
-      <ReadMain
-        leftCardOne={
-          <ReadCardOne
-            description="Sourcing insights and market trends for the apparel and accessories industry."
-            title="Apparel & Accessories
-"
-          />
-        }
-        leftCardsTwo={
-          <>
-            <ReadCardTwo
-              link=""
-              minutes="6"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/12/Three-people-wearing-male-graduation-caps-on-campus.jpg?x-oss-process=style%2Fmedium_large"
-              title="5 Epic Ways to Style Male Graduation Caps in 2026"
-              by="Krista Plociennik"
-              description="Do guys really like to decorate their grad caps? Here’s a look at some popular ways that male graduation caps are being styled in 2026."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="6"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/12/Straw-beach-bag-on-towel-next-to-straw-sun-hat.jpg?x-oss-process=style%2Fmedium_large"
-              title="How to Choose the Best Materials for Beach Bags"
-              by="Krista Plociennik"
-              description="Every material that beach bags are designed with comes with their own pros and cons. Read on to find out more about each style and their features."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="6"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/11/Wide-angle-view-of-an-empty-fashion-studio.jpg?x-oss-process=style%2Fmedium_large"
-              title="Choosing Mannequins for Clothing Design Models: A Complete Guide"
-              by="Anoshia Riaz"
-              description="If you’re into clothing design models, your mannequin game better be strong. Here’s your quick guide."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="6"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/10/a-woman-standing-in-front-of-a-graffiti-covered-wall.jpg?x-oss-process=style%2Fmedium_large"
-              title="Review analysis of Amazon’s hottest selling women’s down coats in USA in 2025"
-              by="Krista Plociennik"
-              description="We analyzed thousands of product reviews, and here’s what we learned about the top-selling women’s down coats in the USA."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="15"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/09/Young-Woman-in-a-Denim-Jacket.jpg?x-oss-process=style%2Fmedium_large"
-              title="Review Analysis of Amazon’s Hottest Selling Plus Size Women’s Jackets in the USA"
-              by="Lela"
-              description="An in-depth analysis of the top-selling plus-size women’s jackets on Amazon USA, based on customer reviews. Discover product strengths, consumer preferences, and market trends to inform brand selection and marketing strategies."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="13"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/09/Gloves-for-Cold-Weather.jpg?x-oss-process=style%2Fmedium_large"
-              title="Review Analysis of Amazon’s Hottest Selling Nylon Gloves and Mittens in the USA"
-              by="Willa"
-              description="We analyzed thousands of product reviews, and here’s what we learned about the top-selling nylon gloves and mittens in the USA."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="14"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/09/A-Woman-Standing-on-Snow-Covered-Ground.jpg?x-oss-process=style%2Fmedium_large"
-              title="Review Analysis of Amazon’s Hottest Selling Neckerchiefs in the USA"
-              by="Anoshia Riaz"
-              description="We analyzed thousands of product reviews, and here’s what we learned about the top-selling neckerchiefs in the USA."
-            />
-            <ReadCardTwo
-              link=""
-              minutes="12"
-              id={1}
-              imgSrc="https://img.baba-blog.com/2025/09/Fashionable-Woman-with-Eyeglasses-Smiling.jpg?x-oss-process=style%2Fmedium_large"
-              title="Climate-Proof Prints: How Spring/Summer 2027 Designs Adapt to a World of Weather Extremes"
-              by="Krista Plociennik"
-              description="Discover how women’s prints are evolving with transitional florals, eco-friendly materials, and bold designs that blend culture, sustainability, and versatility."
-            />
-          </>
-        }
-      />
-    </>
+    <ReadMain
+      leftCardOne={
+        <ReadCardOne
+          category="Beauty & Personal Care"
+          title="Beauty & Personal Care"
+          description="Sourcing insights, style inspiration, and market trends for the beauty and personal care industry."
+        />
+      }
+      leftCardsTwo={personalCareArticles.map((article) => (
+        <ReadCardTwo key={article.id} {...article} />
+      ))}
+      rightContent={<ReadRightContent articles={personalCareArticles} />}
+    />
   );
 };
 

@@ -1,3 +1,5 @@
+
+
 interface ReadMainProps {
   leftCardOne?: React.ReactNode;
   leftCardsTwo?: React.ReactNode;
@@ -9,6 +11,7 @@ const ReadMain = ({
   leftCardsTwo,
   rightContent,
 }: ReadMainProps) => {
+ 
   return (
     <div className="w-full p-6 md:py-15">
       <div className="mx-auto lg:px-8">
@@ -23,7 +26,9 @@ const ReadMain = ({
 
           <div className="lg:w-[28%] w-full sticky top-0">
             <div className="h-screen overflow-y-auto p-6 bg-white rounded-lg [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
               {rightContent}
+             
             </div>
           </div>
         </div>
