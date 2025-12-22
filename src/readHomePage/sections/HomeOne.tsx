@@ -2,11 +2,56 @@ import { IoSearch } from "react-icons/io5";
 import ReadHomeCard from "../../components/ReadHomeCard";
 import ReadHomeCardTwo from "../../components/ReadHomeCardTwo";
 
+const articles = [
+  {
+    id: 1,
+    heading: "Latest News",
+    date: "21 Dec 2025",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/3.png?x-oss-process=style%2Fthumbnail",
+    link: "",
+    name: "The Alibaba.com Team",
+    title:
+      "Stay On-Platform, Stay Protected: A Practical Guide to Secure Your Trading on Alibaba.com",
+  },
+  {
+    id: 2,
+    heading: "Latest News",
+    date: "21 Dec 2025",
+    link: "",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/google-vs-apple-69262b7c96f2f-1.png?x-oss-process=style%2Fthumbnail",
+    name: "Vivian",
+    title: "Google and Apple Team up to Make Switching Phones Easy",
+  },
+  {
+    id: 3,
+    heading: "Latest News",
+    date: "21 Dec 2025",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/imagem-2025-11-30-230902020-692cf8c892f0f-9.png?x-oss-process=style%2Fthumbnail",
+    link: "",
+    name: "Vivian",
+    title: "Intel’s Trumph Card: Apple to Rely on Intel Foundry for Apple M7",
+  },
+  {
+    id: 4,
+    heading: "Latest News",
+    date: "21 Dec 2025",
+    imgSrc:
+      "https://img.baba-blog.com/2025/12/Engine-Thermostats.jpg?x-oss-process=style%2Fmedium",
+    link: "",
+    name: "Vivian",
+    title:
+      "Amazfit Active Max Leaks With Huge Battery Promising 25 Days of Life",
+  },
+];
+
 const HomeOne = () => {
   return (
     <div className="w-full md:p-15 p-6 flex flex-col gap-5 text-[#333]">
       {/*----------------------------- */}
-      <div className="w-full flex md:flex-row flex-col gap-5 items-center">
+      <div className="w-full lg:flex hidden gap-5 items-center">
         <div className="md:w-[80%] w-full flex flex-col gap-2">
           <h1 className="lg:text-5xl text-2xl font-semibold">
             Alibaba.com Reads
@@ -36,20 +81,15 @@ const HomeOne = () => {
           <div className="lg:w-[60%] flex flex-col gap-5 my-5 ">
             <ReadHomeCard
               date="12/21/2025"
-              imgSrc="https://img.baba-blog.com/2025/12/Engine-Thermostats.jpg?x-oss-process=style%2Fmedium"
-              link=""
-              name="Vivian"
+              media="https://img.baba-blog.com/2025/12/Engine-Thermostats.jpg?x-oss-process=style%2Fmedium"
+              author="Vivian"
               title="Review Analysis of Amazon's Hottest Selling Engine Thermostats in the USA"
             />
           </div>
-          <div className="lg:w-[38%] w-full flex flex-col mt-5">
-            <ReadHomeCardTwo
-              date="12/21/2025"
-              imgSrc="https://img.baba-blog.com/2025/12/Engine-Thermostats.jpg?x-oss-process=style%2Fmedium"
-              link=""
-              name="Vivian"
-              title="	Stay On-Platform, Stay Protected: A Practical Guide to Secure 	"
-            />
+          <div className="lg:w-[38%] w-full flex flex-col mt-5 gap-2">
+            {articles.map((c) => (
+              <ReadHomeCardTwo key={c.id} {...c} />
+            ))}
           </div>
         </div>
       </div>

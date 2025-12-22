@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
+import SellerNavbar from "../components/SellerNavbar";
 
 const BusinessLayout = () => {
   return (
     <>
-      <header></header>
+      <header className="flex flex-row w-full h-20"><SellerNavbar/></header>
       <div className="w-full flex lg:flex-row flex-col gap-[4%] ">
         <main className="w-full h-auto">
           <Outlet />

@@ -51,7 +51,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
           isPopular ? "w-full absolute top-3 left-0 pr-3" : "hidden"
         )}
       >
-        <div className="w-full bg-gradient-to-r from-ts-fire to-ts-brown-dark">
+        <div className="w-full bg-linear-to-r from-ts-fire to-ts-brown-dark">
           <p className="w-full text-ts-white text-xs  font-semibold py-2 px-6 ">
             Most popular
           </p>
@@ -140,7 +140,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
             <div key={index} className="flex items-start gap-2">
               <TiTick
                 className={clsx(
-                  "flex-shrink-0 mt-0.5",
+                  "shrink-0 mt-0.5",
                   isPopular ? "text-ts-blue" : "text-ts-blue"
                 )}
                 size={20}

@@ -1,7 +1,7 @@
 import {
   SubscriptionSection,
   type SubscriptionCardProps,
-} from "../../components/SubscriptionComponent";
+} from "./SubscriptionComponent";
 
 export const SubscriptionPage = () => {
   const subscriptionCards: SubscriptionCardProps[] = [
@@ -60,7 +60,7 @@ export const SubscriptionPage = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center items-center bg-gradient-to-b from-ts-grey-light to-ts-white flex-col py-10 px-4">
+    <div className="w-full flex justify-center items-center bg-linear-to-b from-ts-grey-light to-ts-white flex-col py-10 px-4">
       <div className="w-full flex flex-col justify-center items-center">
         <div className="w-fit flex gap-3 bg-white px-3 py-2 justify-center items-center text-sm font-semibold border border-ts-blue rounded-full">
           <p className="bg-ts-blue px-3 py-1 rounded-full hover:cursor-pointer text-ts-white">
