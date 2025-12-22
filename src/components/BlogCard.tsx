@@ -33,7 +33,9 @@ const BusinessCard = ({
     >
       <div
         className={`${
-          blogStyle ? "lg:w-[70%] w-full" : "w-full -translate-y-10  bg-[#f5f8ff]"
+          blogStyle
+            ? "lg:w-[70%] w-full"
+            : "w-full -translate-y-10  bg-[#f5f8ff]"
         } flex flex-col justify-between gap-6 p-4 rounded-[15px] `}
       >
         <div className="flex flex-col gap-2 ">
@@ -61,7 +63,9 @@ const BusinessCard = ({
 
       <Link
         to={link}
-        className={`${blogStyle ? "lg:w-[30%] w-full lg:min-h-60 lg:my-4" : "w-full mt-4"}`}
+        className={`${
+          blogStyle ? "lg:w-[30%] w-full lg:min-h-60 lg:my-4" : "w-full "
+        }`}
       >
         <img
           src={image}

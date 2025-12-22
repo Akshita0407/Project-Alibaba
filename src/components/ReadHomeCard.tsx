@@ -7,14 +7,7 @@ interface CardContent {
   style?: string;
 }
 
-const ReadHomeCard = ({
-  media,
-  title,
-  author,
-  date,
-
-  style,
-}: CardContent) => {
+const ReadHomeCard = ({ media, title, author, date, style }: CardContent) => {
   return (
     <>
       <div

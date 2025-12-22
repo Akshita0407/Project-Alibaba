@@ -5,7 +5,7 @@ import AsideTwo from "./AsideTwo";
 
 const BusinessOne = () => {
   return (
-    <div className="w-full flex lg:flex-row flex-col gap-[3%] mb-3 h-fit">
+    <div className="w-full flex lg:flex-row flex-col gap-[3%]  h-fit">
       <div className="w-full lg:w-[65%]">
         <BusinessCard
           image={image}
@@ -18,7 +18,7 @@ const BusinessOne = () => {
           link=""
         />
       </div>
-      <div className="w-full lg:w-[32%] flex flex-col  justify-between">
+      <div className="w-full lg:w-[32%] flex flex-col  justify-between ">
         <AsideOne />
         <AsideTwo />
       </div>

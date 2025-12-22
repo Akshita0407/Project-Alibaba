@@ -6,7 +6,7 @@ import Submit from "./sections/Submit";
 const Business = () => {
   return (
     <div className="flex flex-col gap-10 ">
-      <div className="flex flex-col gap-10 md:p-15 p-6">
+      <div className="flex flex-col gap-10 md:px-15 pb-15 p-6">
         <BusinessOne />
         <BusinessTwo />
         <BlogArticles />
