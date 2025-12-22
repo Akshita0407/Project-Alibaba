@@ -118,6 +118,7 @@ const VehiclePart = () => {
     <ReadMain
       leftCardOne={
         <ReadCardOne
+          category="Vehicle Parts & Accessories"
           title="Vehicle Parts & Accessories"
           description="Sourcing insights and market trends for the vehicle parts and accessories industry."
         />

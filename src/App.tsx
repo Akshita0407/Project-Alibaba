@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "swiper/swiper-bundle.css";
+import "swiper/swiper.css";
 import MainLayout from "./layout/MainLayout";
 import Home from "./homePage/Index";
 import UsHome from "./usHomePage/Index";
@@ -8,7 +10,7 @@ import Platform from "./platformPage/Index";
 import BusinessLayout from "./layout/BusinessLayout";
 import Business from "./resourcePage/Index";
 import ReadsLayout from "./layout/ReadsLayout";
-import ReadHome from "./components/ReadHome";
+import Read from "./readHomePage/Index";
 import Categories from "./categoriesPage/Index";
 import ProductResource from "./categoriesPage/sections/ProductResource";
 import Apparel from "./categoriesPage/sections/Apparel";
@@ -42,7 +44,7 @@ function App() {
         </Route>
 
         <Route path="/read" element={<ReadsLayout />}>
-          <Route index element={<ReadHome />} />
+          <Route index element={<Read />} />
 
           <Route path="categories" element={<Categories />}>
             <Route index element={<ProductResource />} />
