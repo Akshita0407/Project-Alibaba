@@ -1,15 +1,36 @@
 import { useState, useEffect } from "react";
 
-const FeatureBar = () => {
-  const [isSticky, setIsSticky] = useState(false);
+interface Feature {
+  id: number;
+  label: string;
+  target: string;
+}
 
-  const content = [
-    { id: 1, label: "Storefront and catalog", target: "storefront" },
-    { id: 2, label: "Communication", target: "communication" },
-    { id: 3, label: "Ads and lead generation", target: "adsAndLeads" },
-    { id: 4, label: "Analytics and support", target: "analytics" },
-    { id: 5, label: "Order management", target: "orderManagement" },
-  ];
+interface ContentProps {
+  content?: Feature[];
+  bgColor?: string;
+  textColor?: string;
+  hoverBgColor?: string;
+}
+
+const defaultContent: Feature[] = [
+  { id: 1, label: "Storefront and catalog", target: "storefront" },
+  { id: 2, label: "Communication", target: "communication" },
+  { id: 3, label: "Ads and lead generation", target: "adsAndLeads" },
+  { id: 4, label: "Analytics and support", target: "analytics" },
+  { id: 5, label: "Order management", target: "orderManagement" },
+];
+
+const defaultBgColor = "#e6efff";
+const defaultTextColor = "#333";
+const deafaultHoverBgColor = "#c0d2f6";
+const FeatureBar = ({
+  content = defaultContent,
+  bgColor = defaultBgColor,
+  hoverBgColor = deafaultHoverBgColor,
+  textColor = defaultTextColor,
+}: ContentProps) => {
+  const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,15 +44,15 @@ const FeatureBar = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
 
-    if (element) {
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - 60 - 60;
+    if (!element) return;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - 120;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -39,15 +60,25 @@ const FeatureBar = () => {
       {isSticky && <div className="h-[60px]" />}
 
       <div
-        className={`w-full bg-[#e6efff] h-[60px] flex items-center justify-center px-4 shadow-sm transition-all duration-300
-          ${isSticky ? "fixed top-[60px] left-0 right-0 z-40" : "relative"}`}
+        className={`w-full  h-[60px] flex items-center justify-center px-4 shadow-sm transition-all duration-300
+        ${isSticky ? "fixed top-[60px] left-0 right-0 z-40" : "relative"}`}
+        style={{ backgroundColor: bgColor }}
       >
-        <div className="hidden lg:flex gap-8 text-[14px] font-semibold text-[#333]">
+        <div
+          className={`hidden lg:flex gap-8 text-[14px] font-semibold `}
+          style={{ color: textColor }}
+        >
           {content.map((c) => (
             <button
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = hoverBgColor)
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "transparent")
+              }
               key={c.id}
               onClick={() => scrollToSection(c.target)}
-              className="h-[60px] flex items-center px-4 hover:bg-[#c0d2f6] transition-colors cursor-pointer"
+              className={`h-[60px] flex items-center px-4 transition-colors cursor-pointer`}
             >
               {c.label}
             </button>
@@ -63,6 +94,7 @@ const FeatureBar = () => {
             <option value="" disabled>
               Select feature
             </option>
+
             {content.map((c) => (
               <option key={c.id} value={c.target}>
                 {c.label}

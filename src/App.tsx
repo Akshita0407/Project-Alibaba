@@ -26,6 +26,8 @@ import Renewable from "./categoriesPage/sections/Renewable";
 import Sports from "./categoriesPage/sections/Sports";
 import VehiclePart from "./categoriesPage/sections/VehiclePart";
 import HomeImprovement from "./categoriesPage/sections/HomeImprovement";
+import BuyerLayout from "./layout/BuyerLayout";
+import BuyerHomePage from "./Pages";
 
 function App() {
   return (
@@ -62,6 +64,10 @@ function App() {
             <Route path="sports" element={<Sports />} />
             <Route path="vehicle" element={<VehiclePart />} />
           </Route>
+        </Route>
+
+        <Route path="/buyer" element={<BuyerLayout />}>
+          <Route index element={<BuyerHomePage />} />
         </Route>
       </Routes>
     </BrowserRouter>

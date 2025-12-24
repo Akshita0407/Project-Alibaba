@@ -3,11 +3,12 @@ interface Content {
   imgSrc: string;
   style?: string;
   title: string;
-  description: string;
+  description?: string;
   styleText?: string;
   styleDesc?: string;
   link?: string;
   to?: string;
+  imgStyle?: string;
 }
 
 const WhyCard = ({
@@ -19,12 +20,13 @@ const WhyCard = ({
   styleDesc,
   link,
   to,
+  imgStyle,
 }: Content) => {
   return (
     <div
-      className={` ${style} w-full flex flex-col-reverse lg:flex-row justify-center lg:gap-[8%] gap-8 items-center text-left`}
+      className={` ${style} w-full flex flex-col-reverse lg:flex-row justify-center lg:gap-[4%] gap-8 items-center text-left`}
     >
-      <div className="lg:w-[46%] w-full flex flex-col gap-3 lg:px-6 ">
+      <div className="lg:w-[48%] w-full flex flex-col gap-3  ">
         <h3 className={`text-xl md:text-2xl font-semibold ${styleText}`}>
           {title}
         </h3>
@@ -38,12 +40,12 @@ const WhyCard = ({
           </Link>
         )}
       </div>
-      <div className="lg:w-[46%] w-full justify-center items-center">
-        <div className="w-full lg:h-[250px]">
+      <div className="lg:w-[48%] w-full justify-center items-center relative">
+        <div className={`w-full lg:h-[250px]  ${imgStyle}`}>
           <img
             src={imgSrc}
             alt=""
-            className="w-full h-full object-center object-contain"
+            className="w-full h-full object-center object-cover"
           />
         </div>
       </div>
