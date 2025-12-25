@@ -23,7 +23,7 @@ const BuyerCard = ({
       <Link to={to} key={id}>
         <div className="w-full flex flex-col border  border-[#333] rounded-[10px] md:min-h-[300px]">
           <div className="w-full flex-1 justify-center items-center bg-gray-400 border border-transparent rounded-t-[10px]">
-            <div className="w-full ">
+            <div className="w-full h-fit">
               <img
                 src={image}
                 alt="image"

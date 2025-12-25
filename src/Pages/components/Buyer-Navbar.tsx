@@ -10,8 +10,13 @@ interface NavContent {
   hasDropdown?: boolean;
 }
 const navLinks: NavContent[] = [
-  { id: 1, link: "Get Started", to: "/" },
-  { id: 2, link: "Why Alibaba.com", to: "", hasDropdown: true },
+  { id: 1, link: "Get Started", to: "/buyer" },
+  {
+    id: 2,
+    link: "Why Alibaba.com",
+    to: "/buyer/why-alibaba",
+    hasDropdown: true,
+  },
   { id: 3, link: "Trade Services", to: "", hasDropdown: true },
   { id: 4, link: "Resources", to: "", hasDropdown: true },
   { id: 5, link: "Webinars", to: "", hasDropdown: true },
