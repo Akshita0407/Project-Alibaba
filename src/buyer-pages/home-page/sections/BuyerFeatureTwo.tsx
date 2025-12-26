@@ -1,4 +1,4 @@
-import BuyerText from "../components/BuyerLeftLayout";
+import BuyerText from "../../components/BuyerLeftLayout";
 
 const content = [
   { id: 1, image: "", step: "1", category: "Find products and sellers" },

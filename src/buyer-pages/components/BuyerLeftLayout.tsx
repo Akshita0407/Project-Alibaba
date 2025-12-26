@@ -1,4 +1,3 @@
-
 import Button from "../../components/Button";
 
 interface ContentType {

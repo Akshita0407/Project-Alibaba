@@ -1,4 +1,4 @@
-import FeatureBar from "../../productFeaturePage/sections/FeatureBar";
+import FeatureBar from "../../../productFeaturePage/sections/FeatureBar";
 
 const stickybarContent = [
   { id: 1, label: "What is Alibaba.com", target: "alibaba.com" },

@@ -1,4 +1,4 @@
-import BuyerText from "../components/BuyerLeftLayout";
+import BuyerText from "../../components/BuyerLeftLayout";
 
 interface ContentProps {
   id: number;

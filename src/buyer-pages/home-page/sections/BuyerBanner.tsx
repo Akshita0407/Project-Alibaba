@@ -1,4 +1,4 @@
-import WhyCard from "../../components/Image&Text";
+import WhyCard from "../../../components/Image&Text";
 
 const BuyerBanner = () => {
   return (

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import BottomBar from "../components/BottomBar";
-import BuyerNavbar from "../Pages/components/Buyer-Navbar";
+import BuyerNavbar from "../buyer-pages/components/Buyer-Navbar";
 
 const BuyerLayout = () => {
   return (

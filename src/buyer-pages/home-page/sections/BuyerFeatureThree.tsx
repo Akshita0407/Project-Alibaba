@@ -1,4 +1,4 @@
-import BuyerFeatureCard from "../components/BuyerFeatureCard";
+import BuyerFeatureCard from "../../components/BuyerFeatureCard";
 
 const HearFromBuyers = [
   {

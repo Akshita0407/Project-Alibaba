@@ -27,8 +27,9 @@ import Sports from "./categoriesPage/sections/Sports";
 import VehiclePart from "./categoriesPage/sections/VehiclePart";
 import HomeImprovement from "./categoriesPage/sections/HomeImprovement";
 import BuyerLayout from "./layout/BuyerLayout";
-import BuyerHomePage from "./Pages/Index";
+import BuyerHomePage from "./buyer-pages/home-page/Index";
 import BuyerWhyAlibaba from "./buyer-pages/why-alibaba.com";
+import ProBuyer from "./buyer-pages/pro-buyer";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
         <Route path="/buyer" element={<BuyerLayout />}>
           <Route index element={<BuyerHomePage />} />
           <Route path="why-alibaba" element={<BuyerWhyAlibaba />} />
+          <Route path="probuyer" element={<ProBuyer />} />
         </Route>
       </Routes>
     </BrowserRouter>

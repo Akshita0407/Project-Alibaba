@@ -17,10 +17,11 @@ const navLinks: NavContent[] = [
     to: "/buyer/why-alibaba",
     hasDropdown: true,
   },
-  { id: 3, link: "Trade Services", to: "", hasDropdown: true },
-  { id: 4, link: "Resources", to: "", hasDropdown: true },
-  { id: 5, link: "Webinars", to: "", hasDropdown: true },
-  { id: 6, link: "Partners", to: "" },
+  { id: 3, link: "Pro Buyer", to: "/buyer/probuyer" },
+  { id: 4, link: "Trade Services", to: "", hasDropdown: true },
+  { id: 5, link: "Resources", to: "", hasDropdown: true },
+  { id: 6, link: "Webinars", to: "", hasDropdown: true },
+  { id: 7, link: "Partners", to: "" },
 ];
 const BuyerNavbar = () => {
   const [open, setOpen] = useState(false);
