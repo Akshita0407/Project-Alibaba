@@ -21,7 +21,7 @@ const navLinks: NavContent[] = [
   { id: 4, link: "Trade Services", to: "", hasDropdown: true },
   { id: 5, link: "Resources", to: "", hasDropdown: true },
   { id: 6, link: "Webinars", to: "", hasDropdown: true },
-  { id: 7, link: "Partners", to: "" },
+  { id: 7, link: "Partners", to: "/buyer/partner" },
 ];
 const BuyerNavbar = () => {
   const [open, setOpen] = useState(false);

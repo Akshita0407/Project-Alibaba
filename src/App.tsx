@@ -30,6 +30,7 @@ import BuyerLayout from "./layout/BuyerLayout";
 import BuyerHomePage from "./buyer-pages/home-page/Index";
 import BuyerWhyAlibaba from "./buyer-pages/why-alibaba.com";
 import ProBuyer from "./buyer-pages/pro-buyer";
+import Partner from "./buyer-pages/partners-page";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           <Route index element={<BuyerHomePage />} />
           <Route path="why-alibaba" element={<BuyerWhyAlibaba />} />
           <Route path="probuyer" element={<ProBuyer />} />
+          <Route path="partner" element={<Partner />} />
         </Route>
       </Routes>
     </BrowserRouter>
